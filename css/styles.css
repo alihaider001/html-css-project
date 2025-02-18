@@ -1,0 +1,154 @@
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background: url("../assets/images/background.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 112px;
+}
+
+.logo {
+  width: 167px;
+  height: 41px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.link {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.button {
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 47px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+
+.button.button-xl {
+  padding: 4.5px 58px;
+}
+
+.button-primary {
+  color: #4640be;
+  background-color: white;
+}
+
+.button-outline {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  margin-left: 112px;
+  margin-top: 288px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  color: white;
+  max-width: 628px;
+}
+
+.heading .colored {
+  color: gold;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.hero-image {
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  z-index: 0;
+  
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-button {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 21.45px 24px;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 32px;
+    height: 28.6px;
+    object-fit: contain;
+  }
+
+  .hero-content {
+    margin: 116px 24px 0 24px;
+    align-items: center;
+  }
+
+  .hero-content-wrapper {
+    flex-direction: column;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .hero-image {
+    position: relative;
+  }
+
+  .hero-section {
+    height: 100%;
+  }
+
+}
